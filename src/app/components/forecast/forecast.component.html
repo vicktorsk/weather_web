@@ -1,0 +1,3 @@
+<div class="divc" [@showUpCollection]="(_forecast.weather$ | async)?.length">
+    <app-weather-card  [weather]="weather" *ngFor="let weather of _forecast.weather$ | async"></app-weather-card>
+</div> 
